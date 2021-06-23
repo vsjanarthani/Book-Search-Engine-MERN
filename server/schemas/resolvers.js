@@ -11,7 +11,7 @@ const resolvers = {
 
           return userData;
       }
-      throw new AuthenticationError('Not logged in!');
+      throw new AuthenticationError('You need to be logged in!');
   }
   },
   Mutation: {
@@ -26,13 +26,13 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-          throw new AuthenticationError('Incorrect credentials');
+          throw new AuthenticationError('User not Found!');
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-          throw new AuthenticationError('Incorrect credentials');
+          throw new AuthenticationError('Incorrect Password!');
       }
 
       const token = signToken(user);
@@ -48,7 +48,7 @@ const resolvers = {
           );
           return updatedUser;
       }
-      throw new AuthenticationError('Not logged in!');
+      throw new AuthenticationError('You need to be logged in!');
   },
   removeBook: async (_parent, { bookId }, context) => {
       if (context.user) {
@@ -59,7 +59,7 @@ const resolvers = {
           );
           return updatedUser;
       }
-      throw new AuthenticationError('Not logged in!');
+      throw new AuthenticationError('You need to be logged in!');
   }
 }
 };
