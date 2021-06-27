@@ -67,7 +67,7 @@ No contributions at the moment. If anyone wishes to provide contributions, pleas
 ![webpage](./assets/images/screenshot.png)
 
 ### Deployed
-The application is deployed on Heroku [https:///](https:///)
+The application is deployed on Heroku [https://google-book-search-jana.herokuapp.com/](https://google-book-search-jana.herokuapp.com/)
 
 ### Questions
 If you have any questions, please reach out to the<br>
