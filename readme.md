@@ -64,7 +64,7 @@ This application is covered under **MIT** license.
 No contributions at the moment. If anyone wishes to provide contributions, please contact the author.
 
 ### Screenshot
-![webpage](./public/images/screenshot.png)
+![webpage](./assets/images/screenshot.png)
 
 ### Deployed
 The application is deployed on Heroku [https:///](https:///)
